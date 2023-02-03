@@ -3,11 +3,9 @@
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
   {{> errors}}
-  <h1 class="heading">Setup MFA</h1>
+  <h1 class="heading">{{i18n 'mfa_setup_required_title'}}</h1>
   <div class="text-block">
-    <div class="text-block--overflow-wrap">To enhance the security of your account, you will need to enroll in multi-factor
-      authentication (MFA). You will receive security codes via email or text message that you will use to authenticate
-      with.
+    <div class="text-block--overflow-wrap">{{i18n 'mfa_setup_required_text'}}
     </div>
   </div>
   <div class="tile-selector tile-selector--stacked">
@@ -18,13 +16,13 @@
             <div>
               <button id="submit" data-actionId="setupMfa" type="submit"
                       class="button button--primary brand-primary-bg">
-                Setup
+                {{i18n 'mfa_setup_required_btn_setup'}}
               </button>
             </div>
             {{#if allowSkipMfa}}
-              <a tabindex="0" data-actionId="skipMfa" target="_self" class="anchor">Skip</a>
+              <a tabindex="0" data-actionId="skipMfa" target="_self" class="anchor">{{i18n 'mfa_setup_required_btn_skip'}}</a>
             {{else}}
-              <a tabindex="0" data-actionId="cancelAuthentication" target="_self" class="anchor">Cancel</a>
+              <a tabindex="0" data-actionId="cancelAuthentication" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
             {{/if}}
           </div>
         </div>

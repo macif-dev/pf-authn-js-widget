@@ -8,10 +8,11 @@ import { getCompatibility, doWebAuthn, doRegisterWebAuthn } from './utils/fidoFl
 import { completeStateCallback, failedStateCallback, FLOW_TYPE_USER_AUTHZ, FLOW_TYPE_AUTHZ } from './utils/redirectless';
 import paOnAuthorizationRequest from './utils/paOnAuthorizationRequest';
 import paOnAuthorizationSuccess from './utils/paOnAuthorizationSuccess';
+import i18n from "./helpers/i18n";
 import './scss/main.scss';
 import {isValidEmail, isValidPhone} from "./validators/inputs";
 //uncomment to add your personal branding
-// import './scss/branding.scss';
+import './scss/branding.scss';
 
 (function () {
 
@@ -503,8 +504,7 @@ export default class AuthnWidget {
     let QRCode = require('qrcode');
     QRCode.toCanvas(document.getElementById('qrcode'), data.pairingKey, error => {
       if (error) {
-        document.getElementById("pairing-message").innerText =
-          `Enter the pairing key using ${data.applicationName} to finish pairing.`;
+        document.getElementById("pairing-message").innerText = i18n('index_pairing_msg_part_1') + ' ${data.applicationName} ' + i18n('index_pairing_msg_part_1');
         console.error(error);
       }
     });
@@ -551,8 +551,7 @@ export default class AuthnWidget {
     QRCode.toCanvas(document.getElementById('qrcode'), data.keyUri, { 'width': 128, 'height': 128 },
       function (error) {
         if (error) {
-          document.getElementById("pairing-message").innerText =
-          `Enter the pairing key using your authenticator app,  then enter the code displayed to finish.`;
+          document.getElementById("pairing-message").innerText = i18n('index_pairing_msg');
           console.error(error);
         }
       });
@@ -562,7 +561,7 @@ export default class AuthnWidget {
     let data = this.store.getStore();
     if (data.changeDevicePermitted === false) {
       document.querySelector('#changeDevice').style.display = 'none';
-    }   
+    }
   }
 
   async postAuthenticationCodeResponseRequired()
@@ -572,8 +571,7 @@ export default class AuthnWidget {
     QRCode.toCanvas(document.getElementById('qrcode'), data.uri, { 'width': 128, 'height': 128 },
       function (error) {
         if (error) {
-          document.getElementById("scan-message").innerText =
-          `Scan the code displayed to finish authentication.`;
+          document.getElementById("scan-message").innerText = i18n('index_scan_msg');
           console.error(error);
         }
       });
@@ -643,7 +641,6 @@ export default class AuthnWidget {
       else if ( (selectedDevice[0].type === 'SECURITY_KEY' && value === 'NONE') || (selectedDevice[0].type === 'PLATFORM' && value !== 'FULL') )
       {
         // Cancel authentication if this is the only device so we don't loop
-        console.log("No acceptable authenticator");
         if(data.devices.length == 1)
         {
           // Hide back button and all other stuff. Only Cancel is allowed
@@ -957,7 +954,7 @@ export default class AuthnWidget {
 
   async postPushNotificationWait() {
     let storeState = this.store.getStore();
-    let data = this.store.getStore();    
+    let data = this.store.getStore();
     if (data.changeDevicePermitted === false) {
       document.querySelector('#changeDevice').style.display = 'none';
     }
@@ -997,7 +994,7 @@ export default class AuthnWidget {
     forEach(element => element.addEventListener('click', this.handleAgentlessSignOn));
   }
 
-  handleAgentlessSignOn(evt) {
+  handleAgentlessSignOn() {
     console.log("send credentials to authentication service");
     console.log("complete state `checkReferenceId` action with new REF ID returned");
   }
@@ -1199,9 +1196,10 @@ export default class AuthnWidget {
   handleIdVerificationOptions() {
     let data = this.store.getStore();
     if (data.forcePolicy) {
-      document.getElementById("description").innerHTML = "Select a method to receive a web link on your mobile device to start the verification process.";
+
+      document.getElementById("description").innerHTML = i18n('index_select_method_for_weblink');
       document.getElementById("qrbtn").style.display = "none";
-      
+
       const radios = document.getElementsByName("radioGroup");
       for (let i = 0; i < radios.length; i++) {
         radios[i].checked = true;

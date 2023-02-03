@@ -7,14 +7,14 @@
   <form class="form" id="AuthnWidgetForm">
     <div class="float-label">
       <input type="text" class="text-input float-label__input required" name="userId" id="username" />
-      <label class="float-label__label" for="username">Username</label>
+      <label class="float-label__label" for="{{i18n 'user_id_required_label_username'}}">{{i18n 'user_id_required_label_username'}}</label>
     </div>
     <button id="submit" data-actionid="checkUserId" type="submit" class="button button--primary brand-primary-bg" disabled>
-      Next
+      {{i18n 'btn_next'}}
     </button>
     <div class="text-block">
       <div class="text-block--overflow-wrap">
-        <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">Cancel</a>
+        <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
       </div>
     </div>
   </form>

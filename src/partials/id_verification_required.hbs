@@ -6,21 +6,21 @@
     <div class="stack stack--small">
       <h1 id="requiredHeader" class="heading" data-id="heading">
         {{#if errJson}}
-          Sorry, Something Went Wrong
+          {{i18n 'id_verification_required_title_1'}}
         {{else}}
-          Verification Required
+          {{i18n 'id_verification_required_title_2'}}
         {{/if}}
       </h1>
       <h4 id="requiredDescription" class="heading heading--4 text-block" data-id="heading">
         {{#if errJson}}
-          We had a problem on our side. Scan the QR code using your mobile device's camera and compare the verification code to the one shown on your device. Select Cancel to send a web link via text or email.
+          {{i18n 'id_verification_required_subtitle_1'}}
         {{else}}
-          Click on the web link sent to your mobile device or scan the QR code using your mobile device's camera. Compare the verification code to the one shown on your device.
+          {{i18n 'id_verification_required_subtitle_2'}}
         {{/if}}
       </h4>
-      <h1 id="startedHeader" class="heading" data-id="heading" style="display: none">Verification Started</h1>
+      <h1 id="startedHeader" class="heading" data-id="heading" style="display: none">{{i18n 'id_verification_required_title_3'}}</h1>
       <h4 id="startedDescription" class="heading heading--4 text-block" data-id="heading" style="display: none">
-        Follow the instructions on your mobile device to complete the verification process. Scan the QR code to resume the process. Select Cancel to start over.
+        {{i18n 'id_verification_required_subtitle_3'}}
       </h4>
     </div>
     <div id="qrCodeBlock" class="text-block" style="display: none">
@@ -28,14 +28,14 @@
     </div>
     <div class="text-block stack stack--small" data-id="textblock">
       <div class="text-block stack stack--xsmall">
-        <div class="heading heading--4 text-block" data-id="heading">Verification code:</div>
+        <div class="heading heading--4 text-block" data-id="heading">{{i18n 'id_verification_required_text_check'}}</div>
         <div id="verificationCode" class="heading" data-id="heading">
           {{verificationCode}}
         </div>
       </div>
     </div>
     <div class="text-block">
-      <a tabindex="0" id="retryVerification" target="_self" class="anchor">Cancel</a>
+      <a tabindex="0" id="retryVerification" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
     </div>
   </form>
 </div>

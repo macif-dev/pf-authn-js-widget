@@ -4,9 +4,9 @@
   </div>
   <form class="form form--spacing-lg" id="AuthnWidgetForm">
     <div class="stack stack--small">
-      <h1 id="header" class="heading" data-id="heading">Verification Required</h1>
+      <h1 id="header" class="heading" data-id="heading">{{i18n 'id_verification_options_title'}}</h1>
       <h4 id="description" class="heading heading--4 text-block idv-desc" data-id="heading">
-        Select a method to receive a web link on your mobile device to start the verification process, or select the QR Code button.
+        {{i18n 'id_verification_options_text_1'}}
       </h4>
       <div class="idv-center">
         {{> errors}}
@@ -16,7 +16,7 @@
         {{#if phones.length}}
           <div class="stack stack--small" data-id="textblock">
             <input type="radio" id="mobileRadio" name="radioGroup" value="mobileRadio">
-            <label for="mobileRadio" class="idv-ddlabel">Mobile</label>
+            <label for="mobileRadio" class="idv-ddlabel">{{i18n 'id_verification_options_label_mobile'}}</label>
             <select name="mobiles" id="mobiles" class="idv-ddbox">
               {{#each phones}}
                 <option value={{this.[0]}}>{{this.[1]}}</option>
@@ -24,11 +24,11 @@
             </select>
           </div>
         {{/if}}
-	
+
         {{#if emails.length}}
           <div class="stack stack--small" data-id="textblock">
             <input type="radio" id="emailRadio" name="radioGroup" value="emailRadio">
-            <label for="emailRadio" class="idv-ddlabel">Email</label>
+            <label for="emailRadio" class="idv-ddlabel">{{i18n 'id_verification_options_label_email'}}</label>
             <select name="emails" id="emails" class="idv-ddbox">
               {{#each emails}}
                 <option value={{this.[0]}}>{{this.[1]}}</option>
@@ -38,27 +38,27 @@
         {{/if}}
       </div>
       <h4 id="note" class="heading heading--4 text-page-subtitle text-block idv-note" data-id="heading">
-        <i>Update your account profile if you do not see the correct information.</i>
+        <i>{{i18n 'id_verification_options_text_infos'}}</i>
       </h4>
 
       <div class="idv-btntbl idv-btntbl-down">
         <div class="idv-btnrow">
           <div class="idv-btncell">
             <button id="qrbtn" class="button button--tertiary button--primary idv-btn idv-btn-small" type="button">
-              QR Code
+              {{i18n 'id_verification_options_btn_qrcode'}}
             </button>
           </div>
           <div class="idv-btncell">
             <button id="nextbtn" class="button button--tertiary button--primary idv-btn idv-btn-small" type="button" disabled>
-              Next
+              {{i18n 'btn_next'}}
             </button>
           </div>
         </div>
       </div>
     </div>
     <div class="text-block">
-      <a tabindex="0" id="retryoptions" data-actionId="retryVerification" target="_self" class="anchor">Cancel</a>
-      <a tabindex="0" id="cancelAuthentication" target="_self" class="anchor" style="display: none;">Cancel</a>
+      <a tabindex="0" id="retryoptions" data-actionId="retryVerification" target="_self" class="anchor">{{i18n 'btn_retry'}}</a>
+      <a tabindex="0" id="cancelAuthentication" target="_self" class="anchor" style="display: none;">{{i18n 'btn_cancel'}}</a>
     </div>
   </form>
 </div>

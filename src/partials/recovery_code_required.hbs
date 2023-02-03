@@ -2,26 +2,26 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Recovery Code Required</h1>
+  <h1 class="heading">{{i18n 'recovery_code_required_title'}}</h1>
   {{> errors}}
   {{> spinner}}
   <div class="text-block">
     <div class="text-block__text">
-      The user has selected to perform account recovery and a security code is required.
+      {{i18n 'recovery_code_required_subtitle'}}
     </div>
   </div>
   <form class="form form--margin-small" id="AuthnWidgetForm">
     <div class="float-label">
-      <input type="text" class="text-input float-label__input required" name="recoveryCode" placeholder="Email Address"
+      <input type="text" class="text-input float-label__input required" name="recoveryCode" placeholder="{{i18n 'recovery_code_required_placeholder_recovery'}}"
         autofocus />
-      <label class="float-label__label" for="recoveryCode">Recovery Code</label>
+      <label class="float-label__label" for="recoveryCode">{{i18n 'recovery_code_required_label_recovery'}}</label>
     </div>
     <div class="button-set">
       <button id="submit" type="submit" data-actionid="checkRecoveryCode"
         class="button button--primary brand-primary-bg" disabled>
-        Check Recovery Code
+        {{i18n 'recovery_code_required_btn_check_recovery_code'}}
       </button>
-      <button data-actionId="cancelAccountRecovery" class="button">Cancel</button>
+      <button data-actionId="cancelAccountRecovery" class="button">{{i18n 'btn_cancel'}}</button>
     </div>
   </form>
 </div>

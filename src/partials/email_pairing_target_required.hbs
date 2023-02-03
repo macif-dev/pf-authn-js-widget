@@ -7,9 +7,9 @@
     <svg viewBox="0 0 24 24" role="presentation">
       <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
     </svg>
-    <span class="inline-icon">Email</span></h1>
+    <span class="inline-icon">{{i18n 'email_pairing_target_required_title'}}</span></h1>
   <div class="text-block">
-    <div class="text-block--overflow-wrap">Enter the email you would like to receive authentication codes with.</div>
+    <div class="text-block--overflow-wrap">{{i18n 'email_pairing_target_required_text'}}</div>
   </div>
   <div class="tile-selector tile-selector--stacked">
     <form class="form" id="AuthnWidgetForm">
@@ -24,10 +24,10 @@
             <div>
               <button id="submit" data-actionId="submitEmailTarget" type="submit"
                       class="button button--primary brand-primary-bg">
-                Next
+                {{i18n 'btn_next'}}
               </button>
             </div>
-            <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">Cancel</a>
+            <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
           </div>
         </div>
       </div>

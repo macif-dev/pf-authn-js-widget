@@ -2,22 +2,22 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
-  <h1 class="heading">Email Verification</h1>
+  <h1 class="heading">{{i18n 'email_verification_required_title'}}</h1>
   <div class="text-block">
     <div class="text-block__text">
-      <p>A verification email was sent to <span style="font-weight:bold">{{email}}</span>. Please check your email and follow the directions to verify your account.</p>
-      <p>Didn't receive the email? <a href="#" data-actionid="sendEmailVerificationOtl">Resend</a></p>
+      <p>{{i18n 'email_verification_required_text_1'}} <span style="font-weight:bold">{{email}}</span>. {{i18n 'email_verification_required_text_2'}}</p>
+      <p>{{i18n 'email_verification_required_didnt_receive'}} <a href="#" data-actionid="sendEmailVerificationOtl">{{i18n 'btn_resend'}}</a></p>
     </div>
   </div>
   <form class="form form--margin-small" id="AuthnWidgetForm">
     <div class="button-set">
-      <button data-actionId="poll" class="button button--primary brand-primary-bg">Continue</button>
+      <button data-actionId="poll" class="button button--primary brand-primary-bg">{{i18n 'btn_continue'}}</button>
       <div class="text-block">
-        <a href="#" data-actionid="cancel">Cancel</a>
+        <a href="#" data-actionid="cancel">{{i18n 'btn_cancel'}}</a>
       </div>
       {{#if profileManagementUrl}}
       <div class="text-block">
-        <a href="{{profileManagementUrl}}" target="_blank">Manage Profile</a>
+        <a href="{{profileManagementUrl}}" target="_blank">{{i18n 'email_verification_required_btn_manage'}}</a>
       </div>
       {{/if}}
     </div>
@@ -25,12 +25,12 @@
   {{#ifEq actionid "poll"}}
   <div id="notification" class="icon-feedback icon-feedback--warning icon-feedback--small">
     <span class="icon-feedback__icon pingicon-ghost-error"></span>
-    <p class="icon-feedback__label">Please check your email and come back here to continue.</p>
+    <p class="icon-feedback__label">{{i18n 'email_verification_required_text_poll'}}</p>
   </div>
   {{else ifEq actionid "sendEmailVerificationOtl"}}
   <div id="notification" class="icon-feedback icon-feedback--success icon-feedback--small">
     <span class="icon-feedback__icon pingicon-ghost-success"></span>
-    <p class="icon-feedback__label">A verification email has been sent. Please check your email and come back here to continue.</p>
+    <p class="icon-feedback__label">{{i18n 'email_verification_required_text_check'}}</p>
   </div>
   {{/ifEq}}
 </div>

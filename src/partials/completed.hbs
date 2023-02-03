@@ -3,11 +3,11 @@
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
   {{#if authorizeResponse}}
-  <h1 class="heading">Authentication Success!</h1>
+  <h1 class="heading">{{i18n 'completed_title_1'}}</h1>
   {{else}}
-  <h1 class="heading">Change Password</h1>
+  <h1 class="heading">{{i18n 'completed_title_2'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Congratulations! You have successfully changed your password.</div>
+    <div class="text-block__text">{{i18n 'completed_text'}}</div>
   </div>
   {{/if}}
 </div>

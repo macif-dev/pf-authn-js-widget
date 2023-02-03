@@ -113,25 +113,25 @@
                 class="flex-row flex-row--align-stretch flex-row--justify-start flex-row--flex-direction-column flex-row--column-spacing-sm"
                 data-id="flex-row">
                 {{#ifEq authenticator "SMS OTP"}}
-                  <div class="tile-button__title">OTP Authentication using SMS</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_sms'}}</div>
                 {{else ifEq authenticator "EMAIL OTP"}}
-                  <div class="tile-button__title">OTP Authentication using Email</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_mail'}}</div>
                 {{else ifEq authenticator "VOICE OTP"}}
-                  <div class="tile-button__title">OTP Authentication using Voice</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_voice'}}</div>
                 {{else ifEq authenticator "GRID"}}
-                  <div class="tile-button__title">Grid Card Authentication</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_grid'}}</div>
                 {{else ifEq authenticator "KBA"}}
-                  <div class="tile-button__title">Knowledge-based Authentication</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_kba'}}</div>
                 {{else ifEq authenticator "SMARTCREDENTIALPUSH"}}
-                  <div class="tile-button__title">Smart Credential Push Authentication</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_scpa'}}</div>
                 {{else ifEq authenticator "TOKEN"}}
-                  <div class="tile-button__title">Token Authentication</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_token'}}</div>
                 {{else ifEq authenticator "TOKENPUSH"}}
-                  <div class="tile-button__title">Token Push Authentication</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_token_push'}}</div>
                 {{else ifEq authenticator "TEMP_ACCESS_CODE"}}
-                  <div class="tile-button__title">Temporary Access Code Authentication</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_tempory_code'}}</div>
                 {{else}}
-                  <div class="tile-button__title">Unknown Option</div>
+                  <div class="tile-button__title">{{i18n 'authenticator_selection_required_unknown'}}</div>
                 {{/ifEq}}
               </div>
             </div>
@@ -142,7 +142,7 @@
       <div class="text-block">
         <div class="text-block--overflow-wrap">
           <div class="stack">
-            <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">Cancel</a>
+            <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
           </div>
         </div>
       </div>

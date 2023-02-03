@@ -2,9 +2,9 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
-  <h1 class="heading">Create Your Profile</h1>
+  <h1 class="heading">{{i18n 'registration_required_title'}}</h1>
   <div class="text-block text-block--small">
-    <div class="text-block__text">Enter the information below.
+    <div class="text-block__text">{{i18n 'registration_required_subtitle'}}
     </div>
   </div>
   {{> errors}}
@@ -27,17 +27,17 @@
       <div class="float-label"><input type="password"
                                       class="text-input float-label__input required"
                                       id="password" name="password" "data-st-field"="password"
-                                      placeholder="Password"/><label
+                                      placeholder="{{i18n 'registration_required_label_password'}}"/><label
               class="float-label__label"
-              for="password">Password</label></div>
+              for="password">{{i18n 'registration_required_label_password'}}</label></div>
       {{> password_requirements}}
       <div class="float-label">
         <div id="passwordStatus" class="text-input__icon text-input__icon--error" style="display: none"></div>
         <input type="password"
                class="text-input float-label__input required"
                id="newpassword" name="newpassword" "data-st-field"="newpassword"
-               placeholder="Verify Password"/>
-        <label class="float-label__label" for="newpassword">Verify New Password</label>
+               placeholder="{{i18n 'registration_required_label_verify_password'}}"/>
+        <label class="float-label__label" for="newpassword">{{i18n 'registration_required_label_verify_password'}}</label>
       </div>
     </div>
     {{/unless}}
@@ -47,22 +47,22 @@
           <input type="checkbox" class="checkbox__input" name="thisIsMyDevice" {{checkedIf thisIsMyDeviceSelected}}
                  value="true"/>
           <span class="checkbox__standin"></span>
-          <span class="checkbox__label">This is my Device</span>
+          <span class="checkbox__label">{{i18n 'registration_required_this_my_device'}}</span>
         </label>
       </div>
     {{/if}}
     <button id="submit" data-registrationactionid="registerUser" type="submit" data-st-tag="registration.registration_attempt" class="button button--primary brand-primary-bg" disabled>
-      Save
+      {{i18n 'registration_required_btn_save'}}
     </button>
     {{#with _links as |actions|}}
       {{#if cancel}}
         <div class="text-block text-block--small">
-          <div class="text-block__text">Already have an account?
-            <a data-actionId="cancel" href="#">Sign in</a></div>
+          <div class="text-block__text">{{i18n 'registration_required_label_already_account'}}
+            <a data-actionId="cancel" href="#">{{i18n 'registration_required_btn_sign_in'}}</a></div>
         </div>
       {{/if}}
       {{#if useAlternativeAuthenticationSource}}
-        {{> alternate_authn_sources @root button-prefix="Register" }}
+        {{> alternate_authn_sources @root button-prefix=(i18n 'registration_required_register') }}
       {{/if}}
     {{/with}}
   </form>

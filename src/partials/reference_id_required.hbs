@@ -2,7 +2,7 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Application Sign On</h1>
+  <h1 class="heading">{{i18n 'reference_id_required_title'}}</h1>
   {{> errors}}
   {{> spinner}}
   <form class="form form--margin-small" id="AuthnWidgetForm">
@@ -12,20 +12,20 @@
       </div>
       <div class="text-block--overflow-wrap">
         <a href="https://github.com/pingidentity/pf-authn-js-widget/blob/master/docs/agentless.md" target="_blank">
-          Complete Widget Agentless Integration</a>
+          {{i18n 'reference_id_required_link_complete'}}</a>
       </div>
     </div>
     <div class="float-label">
-      <input type="text" class="text-input float-label__input" id="username" name="username" placeholder="Username" disabled/>
-      <label class="float-label__label" for="username">Username</label>
+      <input type="text" class="text-input float-label__input" id="username" name="username" placeholder="{{i18n 'reference_id_required_label_username'}}" disabled/>
+      <label class="float-label__label" for="username">{{i18n 'reference_id_required_label_username'}}</label>
     </div>
     <div class="float-label">
-      <input type="password" class="text-input float-label__input" id="password" name="password" placeholder="Password" disabled/>
-      <label class="float-label__label" for="password">Password</label>
+      <input type="password" class="text-input float-label__input" id="password" name="password" placeholder="{{i18n 'reference_id_required_label_pwd'}}" disabled/>
+      <label class="float-label__label" for="password">{{i18n 'reference_id_required_label_pwd'}}</label>
     </div>
     <button id="disabled-submit" data-agentlessActionid="checkReferenceId"
             class="button button--primary brand-primary-bg" disabled>
-      Sign On
+      {{i18n 'reference_id_required_btn_sign_on'}}
     </button>
   </form>
 </div>

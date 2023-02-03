@@ -4,15 +4,15 @@
   </div>
   <div class="tile-selector tile-selector--stacked">
     {{#ifEq code "ACCOUNT_LOCKED_OUT"}}
-      {{> error errorHeader="Account Locked" msg=userMessage}}
+      {{> error errorHeader=(i18n 'mfa_failed_error_locked_title msg=userMessage')}}
     {{else}}
-      {{> error errorHeader="Blocked" msg=(concat "You couldn't be authenticated. " userMessage)}}
+      {{> error errorHeader=(i18n 'mfa_failed_error_blocked_title') msg=(concat (i18n 'mfa_failed_error_blocked_infos') userMessage)}}
     {{/ifEq}}
     <form class="form form--margin-small" id="AuthnWidgetForm">
       <div class="text-block" data-id="textblock">
         <div class="text-block--overflow-wrap">
           <a tabindex="0" data-actionId="cancelAuthentication" target="_self" class="anchor">
-            Cancel</a>
+            {{i18n 'btn_cancel'}}</a>
         </div>
       </div>
   </form>

@@ -5,8 +5,7 @@
   {{> errors}}
   <h1 class="heading">{{username}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Enter a security code from your VIP credential or use one of the other mechanisms SMS,
-      Voice and Push (if available) to proceed with authentication.
+    <div class="text-block__text">{{i18n 'vip_authentication_required_subtitle'}}
     </div>
   </div>
   <div class="tile-selector tile-selector--stacked">
@@ -15,7 +14,7 @@
         {{#isVIPPushEnabled vipCredentials}}
           <div>
             <input id="push-radio" type="radio" name="vipAuthentication" value="push">
-            <label for="push-radio">Push Notification</label>
+            <label for="push-radio">{{i18n 'vip_authentication_required_label_push'}}</label>
           </div>
         {{/isVIPPushEnabled}}
         {{#isVIPCredentialType vipCredentials "STANDARD_OTP"}}
@@ -23,9 +22,8 @@
             <div class="form__row">
               <input id="security-code-radio" type="radio" name="vipAuthentication" value="securityCode" checked>
               <div class="float-label">
-                <input id="security-code" type="text" class="text-input float-label__input required"
-                       name="securityCode"/>
-                <label class="float-label__label" for="securityCode">Security Code</label>
+                <input id="security-code" type="text" class="text-input float-label__input required" name="securityCode"/>
+                <label class="float-label__label" for="securityCode">{{i18n 'vip_authentication_required_label_code'}}</label>
               </div>
             </div>
           {{/unless}}
@@ -45,7 +43,7 @@
                   {{/ifEq}}
                 {{/each}}
               </select>
-              <label class="float-label__label" for="sms-list">SMS</label>
+              <label class="float-label__label" for="sms-list">{{i18n 'vip_authentication_required_label_sms'}}</label>
             </div>
           </div>
         {{/isVIPCredentialType}}
@@ -64,17 +62,17 @@
                   {{/ifEq}}
                 {{/each}}
               </select>
-              <label class="float-label__label" for="voice-list">Voice</label>
+              <label class="float-label__label" for="voice-list">{{i18n 'vip_authentication_required_label_voice'}}</label>
             </div>
           </div>
         {{/isVIPCredentialType}}
         <div class="text-block">
           <button id="submit" type="button" class="button button--primary brand-primary-bg" data-id="button">
-            Submit
+            {{i18n 'btn_submit'}}
           </button>
         </div>
         <div class="text-block">
-          <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">Cancel</a>
+          <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
         </div>
       </div>
     </form>

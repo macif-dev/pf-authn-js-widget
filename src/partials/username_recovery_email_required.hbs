@@ -2,9 +2,9 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Username Recovery</h1>
+  <h1 class="heading">{{i18n 'username_recovery_email_required_title'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Enter your email address to receive an email with your username.</div>
+    <div class="text-block__text">{{i18n 'username_recovery_email_required_subtitle'}}</div>
   </div>
   {{> errors}}
   {{> spinner}}
@@ -15,15 +15,15 @@
     </div>
     {{/if}}
     <div class="float-label">
-      <input type="email" class="text-input float-label__input required" name="email" placeholder="Email Address" />
-      <label class="float-label__label" for="email">Email Address</label>
+      <input type="email" class="text-input float-label__input required" name="email" placeholder="{{i18n 'username_recovery_email_required_label_email'}}" />
+      <label class="float-label__label" for="email">{{i18n 'username_recovery_email_required_label_email'}}</label>
     </div>
     <div class="button-set">
       <button id="submit" type="submit" data-actionid="checkUsernameRecoveryEmail"
         class="button button--primary brand-primary-bg" disabled>
-        Send Request
+        {{i18n 'username_recovery_email_required_btn_send'}}
       </button>
-      <button data-actionId="cancelUsernameRecovery" class="button">Cancel</button>
+      <button data-actionId="cancelUsernameRecovery" class="button">{{i18n 'btn_cancel'}}</button>
     </div>
   </form>
 </div>

@@ -2,9 +2,9 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Account Recovery</h1>
+  <h1 class="heading">{{i18n 'account_recovery_username_required_title'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Enter your username to reset your password or unlock your account.</div>
+    <div class="text-block__text">{{i18n 'account_recovery_username_required_text'}}</div>
   </div>
   {{> errors}}
   {{> spinner}}
@@ -17,21 +17,21 @@
     <div class="float-label">
       <input type="text" class="text-input float-label__input required" name="username" placeholder="Username"
         value="{{username}}" />
-      <label class="float-label__label" for="username">Username</label>
+      <label class="float-label__label" for="username">{{i18n 'account_recovery_username_required_username_label'}}</label>
     </div>
     {{#with _links as |actions|}}
     {{#if recoverUsername}}
     <div class="text-block text-block--small">
-      <a href="#" data-actionid="recoverUsername">Trouble With Username?</a>
+      <a href="#" data-actionid="recoverUsername">{{i18n 'account_recovery_username_required_username_recover'}}</a>
     </div>
     {{/if}}
     {{/with}}
     <div class="button-set">
       <button id="submit" type="submit" data-actionid="checkAccountRecoveryUsername"
         class="button button--primary brand-primary-bg" disabled>
-        Send Request
+        {{i18n 'account_recovery_username_required_btn_send'}}
       </button>
-      <button data-actionId="cancelAccountRecovery" class="button">Cancel</button>
+      <button data-actionId="cancelAccountRecovery" class="button">{{i18n 'btn_cancel'}}</button>
     </div>
   </form>
 </div>

@@ -2,18 +2,18 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Successful Account Unlock</h1>
+  <h1 class="heading">{{i18n 'successful_account_unlock_title'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Successful Account Unlock</div>
+    <div class="text-block__text">{{i18n 'successful_account_unlock_successful'}}</div>
   </div>
   <form class="form form--margin-small" id="AuthnWidgetForm">
     <div class="button-set">
       {{#with _links as |actions|}}
       {{#if continueAuthentication}}
-      <button data-actionId="continueAuthentication" class="button">Continue Authentication</button>
+      <button data-actionId="continueAuthentication" class="button">{{i18n 'successful_account_unlock_continue_auth'}}</button>
       {{/if}}
       {{#if continueAccountRecovery}}
-      <button data-actionId="continueAccountRecovery" class="button">Continue Account Recovery</button>
+      <button data-actionId="continueAccountRecovery" class="button">{{i18n 'successful_account_unlock_btn_continue_recovery'}}</button>
       {{/if}}
       {{/with}}
     </div>

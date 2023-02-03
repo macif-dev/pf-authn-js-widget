@@ -3,12 +3,12 @@
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
   {{> errors}}
-  <h1 class="heading">Select Authentication Method</h1>
+  <h1 class="heading">{{i18n 'device_selection_required_title'}}</h1>
   <div class="text-block">
     {{#if manualPairing}}
-      <div class="text-block__text">To add a new authentication method you will need to authenticate with an existing method.</div>
+      <div class="text-block__text">{{i18n 'device_selection_required_text_1'}}</div>
     {{else}}
-      <div class="text-block__text">Select the authentication method you want to use with your account.</div>
+      <div class="text-block__text">{{i18n 'device_selection_required_text_2'}}</div>
     {{/if}}
   </div>
   <div class="tile-selector tile-selector--stacked">
@@ -18,12 +18,11 @@
         {{#if manualPairingPermitted}}
           <div class="text-block">
             <button id="addMfaMethod" class="button file-input--button button--primary brand-primary-bg"
-                    data-id="button" type="button">+ Add Method</button>
+                    data-id="button" type="button">{{i18n 'device_selection_required_btn_add'}}</button>
           </div>
         {{/if}}
         <div class="text-block">
-          <a tabindex="0" data-actionId="cancelAuthentication" target="_self" class="anchor">
-            Cancel</a>
+          <a tabindex="0" data-actionId="cancelAuthentication" target="_self" class="anchor">{{i18n 'device_selection_required_link_cancel'}}</a>
         </div>
       </div>
     </form>
@@ -35,20 +34,20 @@
   <div class="modal-content" tabindex="-1" data-id="modal-content" style="min-width: 320px; width: 320px; height: auto;">
         <span>
             <div class="modal-body overflow-auto" data-id="modal-body">
-                <h1 class="heading-text centered-text">Authentication Required</h1>
+                <h1 class="heading-text centered-text">{{i18n 'device_selection_required_title_2'}}</h1>
                 <div class="text-block" data-id="textblock">
-                    <div class="text-block--overflow-wrap">To add a new authentication method you will need to authenticate with an existing method.</div>
+                    <div class="text-block--overflow-wrap">{{i18n 'device_selection_required_text_3'}}</div>
                 </div>
                 <div class="text-block">
                     <div class="stack" data-id="stack">
                         <div style="margin-top: 30px">
                             <button id="cancelAddMfaMethod" class="button file-input--button brand-primary-bg"
                                     data-id="button" type="button" style="display: inline-block; width: 100px; margin-right: 10px">
-                                Cancel
+                                {{i18n 'btn_cancel'}}
                             </button>
                             <button id="continueAddMfaMethod" class="button file-input--button button--primary brand-primary-bg"
                                     data-id="button" type="button" style="display: inline-block; width: 100px">
-                                Continue
+                                {{i18n 'btn_continue'}}
                             </button>
                         </div>
                     </div>

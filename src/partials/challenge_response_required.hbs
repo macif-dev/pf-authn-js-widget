@@ -2,23 +2,23 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Challenge Response Required</h1>
+  <h1 class="heading">{{i18n 'challenge_response_required_title'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">The user's challenge response is required.</div>
+    <div class="text-block__text">{{i18n 'challenge_response_required_text'}}</div>
   </div>
   {{> errors}}
   {{> spinner}}
   <form class="form form--margin-small" id="AuthnWidgetForm">
     <div class="float-label">
       <input type="text" class="text-input float-label__input required" name="challengeResponse" placeholder="Challenge Response" />
-      <label class="float-label__label" for="challengeResponse">Challenge Response</label>
+      <label class="float-label__label" for="challengeResponse">{{i18n 'challenge_response_required_input_response'}}</label>
     </div>
     <div class="button-set">
       <button id="submit" type="submit" data-actionid="checkChallengeResponse"
         class="button button--primary brand-primary-bg" disabled>
-        Check Challenge Response
+        {{i18n 'challenge_response_required_btn_response'}}
       </button>
-      <button data-actionId="cancelAuthentication" class="button">Cancel</button>
+      <button data-actionId="cancelAuthentication" class="button">{{i18n 'btn_cancel'}}</button>
     </div>
   </form>
 </div>

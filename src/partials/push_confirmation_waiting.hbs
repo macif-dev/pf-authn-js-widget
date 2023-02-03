@@ -6,12 +6,12 @@
   <div class="stack stack--small" data-id="stack"> <h1 class="heading-text centered-text icon-heading">
     <svg viewBox="0 0 24 24" role="presentation">
       <path d="M16,18H7V4H16M11.5,22A1.5,1.5 0 0,1 10,20.5A1.5,1.5 0 0,1 11.5,19A1.5,1.5 0 0,1 13,20.5A1.5,1.5 0 0,1 11.5,22M15.5,1H7.5A2.5,2.5 0 0,0 5,3.5V20.5A2.5,2.5 0 0,0 7.5,23H15.5A2.5,2.5 0 0,0 18,20.5V3.5A2.5,2.5 0 0,0 15.5,1Z"/>
-    </svg><span>PingOne Authenticator</span></h1>
+    </svg><span>{{i18n 'push_confirmation_waiting_title'}}</span></h1>
   </div>
   {{> errors}}
   {{> spinner_small_bot_margins}}
   <div class="icon-feedback icon-feedback--success" style="margin-bottom: 30px;">
-    <p class="icon-feedback__label">Authenticating</p>
+    <p class="icon-feedback__label">{{i18n 'push_confirmation_waiting_small_title'}}</p>
   </div>
   {{> device_selection_body bodyText='Request sent to:'}}
   {{#each devices as |device|}}
@@ -19,7 +19,7 @@
       {{#if device.otpEnabled}}
         <div class="text-block" data-id="textblock" style="margin-top: 25px">
           <div class="text-block--overflow-wrap">
-            <a id="usePasscode" data-id="change-button">Use passcode</a>
+            <a id="usePasscode" data-id="change-button">{{i18n 'push_confirmation_waiting_btn_use_passcode'}}</a>
           </div>
         </div>
       {{/if}}

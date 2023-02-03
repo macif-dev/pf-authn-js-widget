@@ -6,10 +6,10 @@
   <h1 class="heading-text centered-text icon-heading">
     <svg viewBox="0 0 24 24" role="presentation">
       <path d="M20,2A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H6L2,22V4C2,2.89 2.9,2 4,2H20M4,4V17.17L5.17,16H20V4H4M6,7H18V9H6V7M6,11H15V13H6V11Z"></path>
-    </svg><span class="inline-icon">Text Message</span></h1>
+    </svg><span class="inline-icon">{{i18n 'sms_activation_required_title'}}</span></h1>
   <div class="text-block">
     <div class="text-block--overflow-wrap">
-      Enter the passcode that you received to complete the text message pairing.
+      {{i18n 'sms_activation_required_text'}}
     </div>
   </div>
   <div class="tile-selector tile-selector--stacked">
@@ -25,7 +25,7 @@
           <div class="stack stack--small" data-id="stack">
             <div class="text-block" data-id="textblock">
               <div class="text-block--overflow-wrap">
-                Message sent to:
+                {{i18n 'sms_activation_required_sent_to'}}
               </div>
             </div>
             <div class="text-block" data-id="textblock">
@@ -38,7 +38,7 @@
             <div>
               <button class="button file-input--button button--tertiary" data-id="button"
                       data-actionId="resendOtp" type="button">
-                Resend
+                {{i18n 'btn_resend'}}
               </button>
             </div>
           </div>
@@ -50,10 +50,10 @@
             <div>
               <button id="submit" data-actionId="activateSmsDevice" type="submit"
                       class="button button--primary brand-primary-bg">
-                Finish
+                {{i18n 'btn_finish'}}
               </button>
             </div>
-            <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">Cancel</a>
+            <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
           </div>
         </div>
       </div>

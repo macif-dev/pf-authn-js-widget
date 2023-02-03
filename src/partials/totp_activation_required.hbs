@@ -8,10 +8,10 @@
       <path d="M16,18H7V4H16M11.5,22A1.5,1.5 0 0,1 10,20.5A1.5,1.5 0 0,1 11.5,19A1.5,1.5 0 0,1 13,20.5A1.5,1.5 0 0,1 11.5,22M15.5,1H7.5A2.5,2.5 0 0,0 5,3.5V20.5A2.5,2.5 0 0,0 7.5,23H15.5A2.5,2.5 0 0,0 18,20.5V3.5A2.5,2.5 0 0,0 15.5,1Z"
       style="fill: rgb(61, 69, 77);"/>
      </svg>
-    <span class="inline-icon">Authenticator App</span></h1>
+    <span class="inline-icon">{{i18n 'totp_activation_required_title'}}</span></h1>
   <div class="text-block">
     <div id="pairing-message" class="text-block--overflow-wrap">
-      Scan the QR Code using your authenticator app, then enter the code displayed to finish.
+      {{i18n 'totp_activation_required_subtitle'}}
     </div>
   </div>
   <div class="text-block" data-id="textblock">
@@ -21,7 +21,7 @@
     <form class="form" id="AuthnWidgetForm">
       <div class="stack stack--small" data-id="stack">
          <div class="text-block" data-id="textblock">
-            <div class="text-block--overflow-wrap">Pairing Key:
+            <div class="text-block--overflow-wrap">{{i18n 'totp_activation_required_text_pairing'}}
             </div>
           </div>
           <div class="text-block" data-id="textblock">
@@ -38,10 +38,10 @@
             <div>
               <button id="submit" data-actionId="activateTotpDevice" type="submit"
                       class="button button--primary brand-primary-bg">
-                Finish
+                {{i18n 'btn_finish'}}
               </button>
             </div>
-            <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">Cancel</a>
+            <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
           </div>
         </div>
       </div>

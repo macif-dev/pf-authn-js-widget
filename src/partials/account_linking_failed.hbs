@@ -2,7 +2,7 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Account Linking Failed</h1>
+  <h1 class="heading">{{i18n 'account_linking_failed_title'}}</h1>
   <div class="text-block text-block--small">
     <div class="text-block__text">{{userMessage}}</div>
   </div>
@@ -11,10 +11,10 @@
     <form>
       {{#with _links as |actions|}}
       {{#if continue}}
-      <button data-actionId="continue" class="button">Continue</button>
+      <button data-actionId="continue" class="button">{{i18n 'btn_continue'}}</button>
       {{/if}}
       {{#if restart}}
-      <button data-actionId="restart" class="button">Continue</button>
+      <button data-actionId="restart" class="button">{{i18n 'account_linking_failed_btn_restart'}}</button>
       {{/if}}
       {{/with}}
     </form>

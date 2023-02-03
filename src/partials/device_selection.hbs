@@ -44,21 +44,21 @@
           <div class="tile-button__title">{{device.nickname}}</div>
           {{else}}
             {{#ifEq device.type "Android"}}
-              <div class="tile-button__title">PingOne Authenticator</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_android'}}</div>
             {{else ifEq device.type "iPhone"}}
-              <div class="tile-button__title">PingOne Authenticator</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_ios'}}</div>
             {{else ifEq device.type "TOTP"}}
-              <div class="tile-button__title">Authenticator App</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_totp'}}</div>
             {{else ifEq device.type "SMS"}}
-              <div class="tile-button__title">Text Message</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_sms'}}</div>
             {{else ifEq device.type "Email"}}
-              <div class="tile-button__title">Email</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_email'}}</div>
             {{else ifEq device.type "SECURITY_KEY"}}
-              <div class="tile-button__title">Security Key</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_key'}}</div>
             {{else ifEq device.type "PLATFORM"}}
-              <div class="tile-button__title">Biometrics</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_biometrics'}}</div>
             {{else ifEq device.type "Voice"}}
-              <div class="tile-button__title">Voice</div>
+              <div class="tile-button__title">{{i18n 'device_selection_btn_voice'}}</div>
             {{else}}
               <div class="tile-button__title">{{device.type}}</div>
             {{/ifEq}}
@@ -76,7 +76,7 @@
             {{/ifEq}}
           {{/ifEq}}
           {{#if device.defaultDevice}}
-          <div class="device-selector__item-status"><span class="muted-text">Default</span></div>
+          <div class="device-selector__item-status"><span class="muted-text">{{i18n 'device_selection_device_default'}}</span></div>
           {{/if}}
         </div>
       </div>
@@ -99,7 +99,7 @@
             <div class="popup-frame popup-frame--left">
               <div class="popover-menu__dialog" data-id="kebab-menu">
                 <div>
-                  <button class="button file-input--button popover-menu__item" data-id="button" type="button">Set As Default</button>
+                  <button class="button file-input--button popover-menu__item" data-id="button" type="button">{{i18n 'device_selection_btn_default'}}</button>
                 </div>
               </div>
             </div>

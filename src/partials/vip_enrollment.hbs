@@ -5,7 +5,7 @@
   {{> errors}}
   <h1 class="heading">{{username}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Registered Credentials</div>
+    <div class="text-block__text">{{i18n 'vip_enrollment_subtitle'}}</div>
   </div>
   <div class="tile-selector tile-selector--stacked">
     <form class="form form--margin-small" id="AuthnWidgetForm">
@@ -17,16 +17,16 @@
         {{/each}}
         <div class="text-block">
           <button class="button button--primary brand-primary-bg" data-id="button"
-                  data-actionId="continue" type="button">Continue
+                  data-actionId="continue" type="button">{{i18n 'btn_continue'}}
           </button>
         </div>
         <div class="text-block">
           <button class="button" data-id="button" data-actionId="addVIPCredential" type="button">
-            Add Credential
+            {{i18n 'vip_enrollment_btn_add'}}
           </button>
         </div>
         <div class="text-block">
-          <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">Cancel</a>
+          <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
         </div>
       </div>
     </form>

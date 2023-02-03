@@ -7,7 +7,7 @@ module.exports = function (api) {
         corejs: 3,
         "modules": "umd",
       }],
-    "minify",
+    ['minify', { builtIns: false }],
   ];
   let plugins = [
     "add-module-exports",

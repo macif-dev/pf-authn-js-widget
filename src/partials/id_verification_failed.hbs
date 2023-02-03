@@ -7,17 +7,17 @@
   </div>
   <h4 id="failedDescription" class="heading heading--4 text-block idv-center-small" data-id="heading">
     {{#if txId}}
-      Please contact the support team and provide the information below, or please try again by selecting Cancel.
+      {{i18n 'id_verification_failed_subtitle_1'}}
     {{else}}
-      Please contact the support team for more information, or please try again by selecting Cancel.
+      {{i18n 'id_verification_failed_subtitle_2'}}
     {{/if}}
   </h4>
   {{#if txId}}
     <div class="text-block text-block--small" data-id="textblock">
-      <div id="errorMessage" class="text-block--overflow-wrap">Transaction ID: {{txId}}</div>
+      <div id="errorMessage" class="text-block--overflow-wrap">{{i18n 'id_verification_failed_transaction'}} {{txId}}</div>
     </div>
   {{/if}}
   <div class="text-block" data-id="textblock">
-    <a tabindex="0" data-actionId="retryVerification" target="_self" class="anchor">Cancel</a>
+    <a tabindex="0" data-actionId="retryVerification" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
   </div>
 </div>

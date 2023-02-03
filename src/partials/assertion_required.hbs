@@ -3,18 +3,17 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
-
   <div style="display: none" id="unsupportedDeviceId" class="icon-feedback icon-feedback--timeout icon-feedback--error">
     <span class="icon-feedback__icon pingicon-ghost-error"></span>
     <p class="icon-feedback__label">
-      <p class="icon-feedback--error">Unsupported authenticator</p>
+      <p class="icon-feedback--error">{{i18n 'assertion_required_device_unsuported_label'}}</p>
     </p>
   </div>
 
   <div style="display: none" id="consentRefusedId" class="icon-feedback icon-feedback--timeout icon-feedback--error">
     <span class="icon-feedback__icon pingicon-ghost-error"></span>
     <p class="icon-feedback__label">
-      <p class="icon-feedback--error">Unsupported authenticator or user refused consent</p>
+      <p class="icon-feedback--error">{{i18n 'assertion_required_consent_refuse_label'}}</p>
     </p>
   </div>
 
@@ -24,9 +23,9 @@
       <div class="spinner__icon" data-id="spinner"></div>
     </div>
     <div id="assertionRequiredAuthenticatingId" class="icon-feedback icon-feedback--success" style="margin-bottom: 30px;">
-      <p class="icon-feedback__label">Authenticating</p>
+      <p class="icon-feedback__label">{{i18n 'assertion_required_authenticated_label'}}</p>
     </div>
-        {{> device_selection_body bodyText='Request sent to:'}}
+        {{> device_selection_body bodyText=(i18n 'assertion_required_device_selection_text')}}
     <input style="display:none" type="hidden" id="assertion" name="assertion" type="text" class="text-input text-input--primary" value=""/>
     <input  style="display:none"  type="hidden" type="origin" id="origin" name="origin" type="text" class="text-input text-input--primary" value=""/>
     <input  style="display:none" type="hidden" type="compatibility" id="compatibility" name="compatibility" type="text" class="text-input text-input--primary" value=""/>
@@ -34,7 +33,7 @@
     <div class="text-block" data-id="textblock">
       <div class="text-block--overflow-wrap">
         <a tabindex="0" data-actionId="cancelAuthentication" target="_self" class="anchor">
-          Cancel</a>
+          {{i18n 'btn_cancel'}}</a>
       </div>
     </div>
   </form>

@@ -3,12 +3,12 @@
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
   <div class="tile-selector tile-selector--stacked">
-    {{> error errorHeader="Blocked" msg=userMessage}}  
+    {{> error errorHeader=(i18n 'mfa_device_pairing_method_failed_blocked_title') msg=userMessage}}
     <form class="form form--margin-small" id="AuthnWidgetForm">
       <div class="text-block" data-id="textblock">
         <div class="text-block--overflow-wrap">
           <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">
-            Cancel</a>
+            {{i18n 'btn_cancel'}}</a>
         </div>
       </div>
   </form>

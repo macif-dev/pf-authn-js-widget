@@ -1,5 +1,6 @@
 import { initRedirectless } from './utils/redirectless';
 import FetchUtil from './utils/fetchUtil';
+import i18n from "./helpers/i18n";
 
 export default class Store {
   constructor(flowId, baseUrl, checkRecaptcha, options) {
@@ -43,8 +44,6 @@ export default class Store {
     if (this.prevState.username && !this.state.username) {
       this.state.username = this.prevState.username;
     }
-    console.log('dispatching actionId: ' + actionId);
-    console.log(this.state);
     this.notifyListeners();
   }
 
@@ -121,21 +120,21 @@ export default class Store {
         //read the cancel operation
         switch (json.canceledOperation) {
           case 'PASSWORD_CHANGE':
-            this.state.canceledTitle = 'Change Password';
-            this.state.canceledMessage = 'You have cancelled the attempt to change your password. Please close this window. ';
+            this.state.canceledTitle = i18n('error_pwd_change_title');
+            this.state.canceledMessage = i18n('error_pwd_change_msg');
             break;
           case 'ACCOUNT_RECOVERY':
-            this.state.canceledTitle = 'Account Recovery';
-            this.state.canceledMessage = 'You have cancelled the attempt to reset your password. Please close this window.';
+            this.state.canceledTitle = i18n('error_account_recovery_title');
+            this.state.canceledMessage = i18n('error_account_recovery_msg');
             break;
           case 'USERNAME_RECOVERY':
-            this.state.canceledTitle = 'Account Recovery ';
-            this.state.canceledMessage = 'You have cancelled the attempt to retrieve your username. Please close this window.';
+            this.state.canceledTitle = i18n('error_username_recovery_title');
+            this.state.canceledMessage = i18n('error_username_recovery_msg');
             break;
         }
       } else if (json.status === 'FAILED') {
         if (this.state.code && !this.state.userMessage) {
-          this.state.userMessage = `The server returned "${this.state.code}" code. Please contact your system administrator.`;
+          this.state.userMessage = i18n('error_server_return_part_1') + " ${this.state.code} " + i18n('error_server_return_part_2');
         }
       } else if (json.status === 'ID_VERIFICATION_REQUIRED' || json.status === 'ID_VERIFICATION_OPTIONS') {
         let errors = this.getErrorDetails(json);
@@ -206,7 +205,7 @@ export default class Store {
             userMessage = userMessage.slice(0, -1).concat(' : ').concat(msg.target);
           }
           if (!userMessage && msg.code) {
-            userMessage = `Error code "${msg.code}" returned from the authorization server.`
+            userMessage = i18n('error_code_part_1') + " ${msg.code} " + i18n('error_code_part_2');
           }
           errors.userMessages.push(userMessage);
         });
@@ -235,14 +234,11 @@ export default class Store {
     return errors;
   }
 
-
   notifyListeners() {
-    console.log('notifying # of listeners: ' + this.listeners.length);
     this.listeners.forEach(observer => observer(this.prevState, this.state));
   }
 
   registerListener(listener) {
     this.listeners.push(listener);
-    console.log('registering # of listeners: ' + this.listeners.length);
   }
 }

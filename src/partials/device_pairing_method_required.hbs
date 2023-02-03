@@ -3,9 +3,9 @@
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo"/>
   </div>
   {{> errors}}
-  <h1 class="heading">Select Method</h1>
+  <h1 class="heading">{{i18n 'device_pairing_methode_required_title'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Select the authentication method you want to pair with your account.</div>
+    <div class="text-block__text">{{i18n 'device_pairing_methode_required_text'}}</div>
   </div>
   {{#each devicePairingMethods as |devicePairingMethod|}}
     <div class="tile-button--side-icon tile-button tile-button--stacked-small"
@@ -53,34 +53,34 @@
           {{#ifEq devicePairingMethod.deviceType "MOBILE"}}
             <div class="tile-button__title">{{devicePairingMethod.applicationName}}</div>
           {{else ifEq devicePairingMethod.deviceType "TOTP"}}
-            <div class="tile-button__title">Authenticator App</div>
+            <div class="tile-button__title">{{i18n 'device_pairing_methode_required_auth_app'}}</div>
           {{else ifEq devicePairingMethod.deviceType "SMS"}}
-            <div class="tile-button__title">Text Message</div>
+            <div class="tile-button__title">{{i18n 'device_pairing_methode_required_auth_sms'}}</div>
           {{else ifEq devicePairingMethod.deviceType "Email"}}
-            <div class="tile-button__title">Email</div>
+            <div class="tile-button__title">{{i18n 'device_pairing_methode_required_auth_email'}}</div>
           {{else ifEq devicePairingMethod.deviceType "SECURITY_KEY"}}
-            <div class="tile-button__title">Security Key</div>
+            <div class="tile-button__title">{{i18n 'device_pairing_methode_required_auth_key'}}</div>
           {{else ifEq devicePairingMethod.deviceType "PLATFORM"}}
-            <div class="tile-button__title">Biometrics</div>
+            <div class="tile-button__title">{{i18n 'device_pairing_methode_required_auth_biometrics'}}</div>
           {{else ifEq devicePairingMethod.deviceType "Voice"}}
-            <div class="tile-button__title">Voice Authentication</div>
+            <div class="tile-button__title">{{i18n 'device_pairing_methode_required_auth_voice'}}</div>
           {{else}}
             <div class="tile-button__title">{{devicePairingMethod.deviceType}}</div>
           {{/ifEq}}
           {{#ifEq devicePairingMethod.deviceType "MOBILE"}}
-            <div class="tile-button__content">Use PingOne to receive push notifications.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_mobile'}}</div>
           {{else ifEq devicePairingMethod.deviceType "TOTP"}}
-            <div class="tile-button__content">Use an authenticator app (like Google) to authenticate.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_totp'}}</div>
           {{else ifEq devicePairingMethod.deviceType "SMS"}}
-            <div class="tile-button__content">Receive a text message with a passcode to authenticate.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_sms'}}</div>
           {{else ifEq devicePairingMethod.deviceType "Email"}}
-            <div class="tile-button__content">Receive an email with a passcode to authenticate.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_email'}}</div>
           {{else ifEq devicePairingMethod.deviceType "SECURITY_KEY"}}
-            <div class="tile-button__content">Use a security key to authenticate.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_key'}}</div>
           {{else ifEq devicePairingMethod.deviceType "PLATFORM"}}
-            <div class="tile-button__content">Use a fingerprint or facial scan to authenticate.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_platform'}}</div>
           {{else ifEq devicePairingMethod.deviceType "Voice"}}
-            <div class="tile-button__content">Receive a phone call with a passcode to authenticate.</div>
+            <div class="tile-button__content">{{i18n 'device_pairing_methode_required_btn_voice'}}</div>
           {{/ifEq}}
         </div>
       </div>
@@ -91,7 +91,7 @@
       <div class="text-block" data-id="textblock">
         <div class="text-block--overflow-wrap">
           <a tabindex="0" data-actionId="cancelDevicePairing" target="_self" class="anchor">
-            Cancel</a>
+            {{i18n 'btn_cancel'}}</a>
         </div>
       </div>
     </form>

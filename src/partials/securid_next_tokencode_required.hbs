@@ -7,21 +7,21 @@
   <form class="form" id="AuthnWidgetForm">
     <div class="text-block" data-id="textblock">
       <div class="text-block--overflow-wrap">
-        Wait until the tokencode (the number on your RSA SecurID token) changes, then enter the new tokencode.<br/><strong>Note</strong>: It might take a minute or more for the tokencode to change.
+        {{> i18n 'securid_next_tokencode_required_text'}}
       </div>
     </div>
     <div class="float-label">
       <input type="password" class="text-input float-label__input required" id="tokencode" name="tokencode"
-        placeholder="Next Tokencode" />
-      <label class="float-label__label" for="tokencode">Next Tokencode</label>
+        placeholder="{{i18n 'securid_next_tokencode_required_label_next_token'}}" />
+      <label class="float-label__label" for="tokencode">{{i18n 'securid_next_tokencode_required_label_next_token'}}</label>
     </div>
     <button id="submit" data-actionid="checkNextTokencode" type="submit"
       class="button button--primary brand-primary-bg">
-      Submit
+      {{i18n 'btn_submit'}}
     </button>
     <div class="text-block">
       <div class="text-block--overflow-wrap">
-        <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">Cancel</a>
+        <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
       </div>
     </div>
   </form>

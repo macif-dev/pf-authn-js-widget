@@ -15,6 +15,7 @@ module.exports = (env, argv) => {
   const publicPath = '/';
   return {
     devServer: {
+      https: true,
       hot: true,
       setupMiddlewares: (middlewares, server) => {
         var options = {

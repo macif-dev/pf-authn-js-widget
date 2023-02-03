@@ -1,0 +1,449 @@
+{
+  "account_linking_failed_title": "Echec de la liaison du compte",
+  "account_linking_failed_btn_restart": "Continuer",
+
+  "account_recovery_otl_verification_required_title": "Récupération d'identifiant",
+  "account_recovery_otl_verification_required_text": "Vous allez recevoir sous peu un email vous indiquant comment vous pouvez récupérer votre compte.\nSi cet email n'est pas reçu sous quelques minutes, merci de réessayer. Vous pouvez fermer cette fenêtre.",
+
+  "account_recovery_username_required_title": "Récupération d'identifiant",
+  "account_recovery_username_required_text": "Tapez votre identifiant pour réinitialiser votre mot de passe ou déverrouiller votre compte.",
+  "account_recovery_username_required_username_label": "Identifiant",
+  "account_recovery_username_required_username_recover": "Identifiant perdu ?",
+  "account_recovery_username_required_btn_send": "Envoyer une demande",
+
+  "alternate_authn_source_with": "avec",
+
+  "assertion_required_authenticated_label": "Authentification en cours",
+  "assertion_required_device_unsuported_label": "Système d'authentification non pris en charge",
+  "assertion_required_consent_refuse_label": "Système d'authentification non pris en charge ou consentement refusé par l'utilisateur",
+  "assertion_required_device_selection_text": "Demande envoyée à :",
+
+  "authentication_code_response_required_title": "Code d'authentification",
+  "authentication_code_response_required_msg": "Scanner le QR Code affiché pour compléter l'authentification.",
+  "authentication_code_response_required_text": "Code d'authentification:",
+
+  "authenticator_selection_required_sms": "Authentification par OTP par SMS",
+  "authenticator_selection_required_mail": "Authentification par OTP par Email",
+  "authenticator_selection_required_voice": "Authentification vocale par OTP",
+  "authenticator_selection_required_grid": "Authentification par carte à puce",
+  "authenticator_selection_required_kba": "Authentification sur base de connaissance",
+  "authenticator_selection_required_scpa": "Authentification Smart Credential Push",
+  "authenticator_selection_required_token": "Authentication par jeton",
+  "authenticator_selection_required_token_push": "Authentication par jeton push",
+  "authenticator_selection_required_tempory_code": "Authentication par code d'accès temporaire",
+  "authenticator_selection_required_unknown": "Option inconnue",
+
+  "canceled_title": "Récupération d'identifiant",
+  "canceled_text": "Vous avez annulé la tentative de récupération de compte. Vous pouvez fermer cette fenêtre.",
+
+  "challenge_response_required_title": "Réponse Challenge Requise",
+  "challenge_response_required_text": "La réponse challenge de l'utilisateur est requise.",
+  "challenge_response_required_input_response": "Réponse Challenge",
+  "challenge_response_required_btn_response": "Vérifier la Réponse Challenge",
+
+  "change_password_external_title": "Changement de mot de passe",
+  "change_password_external_text": "Pour changer de mot de passe, merci d'accéder au système de gestion des mots de passe.",
+
+  "completed_title_1": "Authentication réussie !",
+  "completed_title_2": "Changement de mot de passe",
+  "completed_text": "Félicitations ! Votre mot de passe a été changé avec succès.",
+
+  "current_credentials_required_title": "Changement de mot de passe",
+  "current_credentials_required_text": "Merci d'entrer vos identifiants actuels et de vous authentifier avec d'autres facteurs avant de procéder au changement de mot de passe.",
+  "current_credentials_required_input_username": "Identifiant",
+  "current_credentials_required_input_pwd": "Ancien mot de passe",
+
+  "device_pairing_methode_required_title": "Selectionner une méthode",
+  "device_pairing_methode_required_text": "Selectionner la méthode d'authentification que vous voulez associer à votre compte.",
+  "device_pairing_methode_required_auth_app": "Application d’authentification",
+  "device_pairing_methode_required_sms": "SMS",
+  "device_pairing_methode_required_email": "Email",
+  "device_pairing_methode_required_key": "Clef de sécurité",
+  "device_pairing_methode_required_biometrics": "Biométrie",
+  "device_pairing_methode_required_voice": "Authentication vocale",
+  "device_pairing_methode_required_btn_mobile": "Utilisez PingOne pour recevoir les notifications.",
+  "device_pairing_methode_required_btn_totp": "Utilisez une application d'authentification (par exemple Google) pour vous authentifier.",
+  "device_pairing_methode_required_btn_sms": "Recevoir un SMS contenant un mot de passe pour vous authentifier.",
+  "device_pairing_methode_required_btn_email": "Recevoir un email contenant un mot de passe pour vous authentifier.",
+  "device_pairing_methode_required_btn_key": "Utiliser une clef de sécurité pour vous authentifier.",
+  "device_pairing_methode_required_btn_platform": "Utiliser une empreinte digitale ou faciale pour vous authentifier.",
+  "device_pairing_methode_required_btn_voice": "Recevoir un code par téléphone pour vous authentifier.",
+
+  "device_profile_required_title": "Dispositif de profilage",
+
+  "device_profile_session_id_required_title": "ID du Cookie de session non trouvé",
+  "device_profile_session_id_required_text_1": "ID du cookie de session non trouvé. Merci de paramétrer le gestionnaire de risque pour résoudre le problème.",
+  "device_profile_session_id_required_text_2": "Ce statut est dédié aux applications nativement mobiles qui font du profilage externe pour PingFederate.",
+  "device_profile_session_id_required_href": "les instructions indiquées",
+
+  "device_selection_btn_android": "Authentification par PingOne",
+  "device_selection_btn_ios": "Authentification par PingOne",
+  "device_selection_btn_totp": "Authentification par App",
+  "device_selection_btn_sms": "SMS",
+  "device_selection_btn_email": "Email",
+  "device_selection_btn_key": "Clef de Securité",
+  "device_selection_btn_biometrics": "Biométrie",
+  "device_selection_btn_voice": "Voix",
+  "device_selection_device_default": "Défaut",
+  "device_selection_btn_default": "Utiliser par défaut",
+
+  "device_selection_body_text_biometrics": "Biométrie",
+  "device_selection_body_text_key": "Clef de Securité",
+
+  "device_selection_header_label_android": "Authentification par PingOne",
+  "device_selection_header_label_ios": "Authentification par PingOne",
+  "device_selection_header_label_totp": "Authentification par App",
+  "device_selection_header_label_sms": "SMS",
+  "device_selection_header_label_voice": "Vocal",
+  "device_selection_header_label_email": "Email",
+  "device_selection_header_text_totp": "Entrer le code affiché sur votre application pour terminer l'authentification.",
+  "device_selection_header_text_passcode": "Entrer le code affiché sur votre application",
+  "device_selection_header_text_or": "oru",
+  "device_selection_header_text_retry": "réessayer de s'authentifier",
+  "device_selection_header_text_complete": "pour compléter l'authentification.",
+  "device_selection_header_text_voice": "Entrer le code que vous avez entendu pour terminer l'authentification.",
+  "device_selection_header_text_default": "Entrer le code que vous avez reçu pour terminer l'authentification.",
+
+  "device_selection_information_text_voice": "Appel en cours:",
+  "device_selection_information_text_sms": "SMS envoyé à:",
+  "device_selection_information_text_sent": "envoyé à:",
+  "device_selection_information_btn_call": "Rappeler",
+
+  "device_selection_required_title": "Selectionner une méthode d'authentification",
+  "device_selection_required_text_1": "Pour ajouter une nouvelle méthode d'authentification vous devez vous authentifier avec une méthode précédemment utilisée.",
+  "device_selection_required_text_2": "Selectionner la méthode d'authentification que vous voulez utiliser avec votre compte.",
+  "device_selection_required_btn_add": "+ Ajouter une méthode",
+  "device_selection_required_link_cancel": "Annuler",
+  "device_selection_required_title_2": "Authentification nécessaire",
+  "device_selection_required_text_3": "Pour ajouter une nouvelle méthode d'authentification vous devez vous authentifier avec une méthode précédemment utilisée.",
+
+  "email_activation_required_label_icon": "Email",
+  "email_activation_required_text_1": "Entrer le code que vous avez reçu pour terminer l'association de l'adresse email.",
+  "email_activation_required_text_2": "Email envoyé à :",
+
+  "email_pairing_target_required_title": "Email",
+  "email_pairing_target_required_text": "Entrer l'adresse email que vous voudriez utiliser pour recevoir les codes d'authentification.",
+
+  "email_verification_otp_required_title": "Vérification de l'email ",
+  "email_verification_otp_required_text_1": "Un email de vérification a été envoyé à",
+  "email_verification_otp_required_text_2": "Merci de vérifier vos emails et d'entrer le code de sécurité ici.",
+  "email_verification_otp_required_need_code": "Besoin d'un nouveau code ?",
+  "email_verification_otp_required_btn_skip": "Passer cette étape",
+  "email_verification_otp_required_btn_manage": "Gérer le profil",
+  "email_verification_otp_required_text_check": "Merci de vérifier vos emails et d'entrer le code de sécurité ici.",
+
+  "email_verification_required_title": "Vérification de l'Email",
+  "email_verification_required_text_1": "Un email de vérification a été envoyé à",
+  "email_verification_required_text_2": "Merci de vérifier vos emails puis de suivre les indications pour vérifier votre compte.",
+  "email_verification_required_didnt_receive": "Email non reçu?",
+  "email_verification_required_btn_manage": "Gérer le profil",
+  "email_verification_required_text_poll": "Merci de vérifier vos emails puis revenez à cette étape pour continuer.",
+  "email_verification_required_text_check": "n email de vérification a été envoyé. Merci de vérifier vos emails puis revenez à cette étape pour continuer.",
+
+  "entrust_failed_title": "L'authentification a échoué",
+
+  "error_title": "Erreur",
+  "error_text": "Une erreur est survenue.",
+
+  "external_authentication_completed_title": "Authentification réussie !",
+
+  "external_authentication_failed_title": "L'authentification a échoué",
+
+  "external_authentication_required_title": "S'authentifier dans la Popup",
+  "external_authentication_required_text": "La popup a été fermée, voulez-vous annuler ou réessayer ?",
+  "external_authentication_required_btn_try": "Réessayer",
+
+  "failed_title": "Erreur",
+
+  "fraud_evaluation_check_required_title": "Evaluation du risque de fraude...",
+
+  "id_verification_completed_title": "Vérifié",
+
+  "id_verification_device_title": "Vérification nécessaire",
+  "id_verification_device_subtitle": "Si vous êtes déjà sur votre appareil mobile, selectionnez cet appariel pour ouvrir un lien sur votre appareil pour initier le processus de vérification, sinon sélectionnez le bouton 'Autre appareil'.",
+  "id_verification_device_btn_other": "Autre appareil",
+  "id_verification_device_btn_this": "Cet appareil",
+
+  "id_verification_failed_subtitle_1": "Merci de contacter le support MACIF et d'indiquer les informations ci-dessous, ou réessayez en sélectionnant Annuler.",
+  "id_verification_failed_subtitle_2": "Merci de contacter le support MACIF pour plus d'information, ou réessayez en sélectionnant Annuler.",
+  "id_verification_failed_transaction": "Identifiant de la Transaction :",
+
+  "id_verification_in_progress_title": "Verication en cours...",
+
+  "id_verification_options_title": "Vérification nécessaire",
+  "id_verification_options_text_1": "Sélectionner une méthode pour recevoir un lien sur votre appareil mobile pour commencer le processus de vérification, ou sélectionner le bouton QR Code.",
+  "id_verification_options_label_mobile": "Mobile",
+  "id_verification_options_label_email": "Email",
+  "id_verification_options_text_infos": "Mettez votre profil à jour si les informations indiquées ne sont pas correctes.",
+  "id_verification_options_btn_qrcode": "QR Code",
+
+  "id_verification_required_title_1": "Malheureusement, une erreur est apparue",
+  "id_verification_required_title_2": "Vérification nécessaire",
+  "id_verification_required_subtitle_1": "Nous avons détecté un problème. Scannez le QR code en utilisant la fonctionnalité d'appareil photo de votre appareil mobile et comparez le code de vérification à celui qui s'affiche sur votre appareil. Sélectionnez Annuler pour envoyer un lien par SMS ou email.",
+  "id_verification_required_subtitle_2": "Cliquez sur le lienenvoyé sur votre appareil mobile ou scannez le QR code en utilisant l'appareil photo de votre appareil mobile. Comparez le code de vérification à celui qui s'affiche sur votre appareil.",
+  "id_verification_required_title_3": "Vérification initiée",
+  "id_verification_required_subtitle_3": "Suivez les instructions sur votre appareil mobile pour terminer le processus de vérification. Scannez le QR code pour terminer le processus. Cliquez sur Annuler pour recommencer.",
+  "id_verification_required_text_check": "Code de vérification :",
+
+  "id_verification_timed_out_title": "Délai expiré",
+
+
+  "identifier_required_title": "Se connecter",
+  "identifier_required_text_choose": "Choisir un compte",
+  "identifier_required_btn_another": "Utiliser un autre compte",
+
+  "identifier_signon_input_username_label": "Identifiant",
+
+  "input_required_text_confirm_token": "Confirmez la demande d'authentification affichée sur l'application Entrust Mobile Soft Token Application.",
+  "input_required_text_approve_push": "Approuvez la Notification, puis cliquez sur Valider",
+  "input_required_text_confirm_credential": "Confirmer la demande d'authentification affichée sur votre application mobile appairée.",
+  "input_required_approve_challenge": "Approuvez le Challenge, puis cliquez sur Valider",
+  "input_required_text_kba": "Entrer les answers à vos questions.",
+  "input_required_placeholder_kba": "Réponses",
+  "input_required_text_grid": "Entrer la réponse .",
+  "input_required_text_serial": "Serial number of grid cards that can be used",
+  "input_required_text_email_otp": "Entrer le mot de passe à usage unique qui vient de vous être envoyé.",
+  "input_required_text_sms_otp": "Entrer le mot de passe à usage unique qui vient de vous être envoyé.",
+  "input_required_text_voice_otp": "Entrer le mot de passe à usage unique qui vient de vous être envoyé.",
+  "input_required_text_token": "Entrer le mot de passe à usage unique généré par votre jeton pour terminer l'authentification.",
+  "input_required_text_code": "Entrer votre code d'accès temporaire.",
+  "input_required_label_email_otp": "Entrer le code OTP",
+  "input_required_label_sms_otp": "Entrer le code OTP",
+  "input_required_label_voice_otp": "Entrer le code OTP",
+  "input_required_label_token": "Entrer le jeton",
+  "input_required_label_tempory_code": "Entrer le code temporaire",
+  "input_required_label_passcode": "Entrer le code",
+  "input_required_btn_alternative": "Authentification Alternative",
+
+  "mfa_completed_title": "Authentifié",
+
+  "mfa_device_pairing_method_failed_blocked_title": "Bloqué",
+
+  "mfa_failed_error_locked_title": "Compté verrouillé",
+  "mfa_failed_error_blocked_title": "Bloqué",
+  "mfa_failed_error_blocked_infos": "L'authentification a échoué. ",
+
+  "mfa_setup_required_title": "Installer MFA",
+  "mfa_setup_required_text": "Pour renforcer la sécurité de votre compte, vous serez amené à utiliser l'authentification multi-facteurs (MFA). Vous allez recevoir des codes de sécurité par email ou SMS que vous pourrez utiliser pour vous identifier.",
+  "mfa_setup_required_btn_setup": "Installer",
+  "mfa_setup_required_btn_skip": "Passer",
+
+  "mobile_activation_required_msg_1": "Scanner le QR code en utilisant",
+  "mobile_activation_required_msg_2": "pour finir l'association.",
+  "mobile_activation_required_label_pairing": "Clef d'association:",
+
+  "must_change_password_title": "Changer le mot de passe",
+  "must_change_password_subtitle": "Merci d'entrer votre mot de passe actuel et de confirmer votre nouveau mot de passe.",
+  "must_change_password_label_username": "Identifiant",
+  "must_change_password_label_current_pwd": "Mot de passe actuel",
+  "must_change_password_label_new_pwd": "Entrer le nouveau mot de passe",
+  "must_change_password_label_verify_pwd": "Confirmer le nouveau mot de passe",
+
+  "new_password_recommended_title": "Mot de passe expiré",
+  "new_password_recommended_subtitle_1": "Votre mot de passe va expirer",
+  "new_password_recommended_subtitle_2": "Voulez-vous le changer maintenant ?",
+  "new_password_recommended_btn_change_now": "Changer le mot de passe",
+  "new_password_recommended_btn_change_later": "Changer plus tard",
+
+  "new_password_required_title": "Changer le mot de passe",
+  "new_password_required_subtitle_1": "Merci d'entrer votre mot de passe actuel et de confirmer votre nouveau mot de passe.",
+  "new_password_required_subtitle_2": "Merci d'entrer votre nouveau mot de passe.",
+  "new_password_required_label_username": "Identifiant",
+  "new_password_required_label_current_pwd": "Mot de passe actuel",
+  "new_password_required_label_new_pwd": "Entrer votre nouveau mot de passe",
+  "new_password_required_label_verify_pwd": "Confirmer votre nouveau mot de passe",
+
+  "oauth_device_completed_title": "Cet appareil n'est pas autorisé.",
+
+  "oauth_device_user_code_confirmation_required_title": "Confirmer le code d'activation affiché sur votre appareil.",
+  "oauth_device_user_code_confirmation_required_label_usercode": "Code d'activation",
+  "oauth_device_user_code_confirmation_required_btn_confirm": "Confirmation",
+
+  "oauth_device_user_code_required_text": "Entrer le code d'activation affiché sur votre appareil.",
+  "oauth_device_user_code_required_label_code": "Code d'activation",
+
+  "one_time_device_otp_input_required_text_sms": "SMS",
+  "one_time_device_otp_input_required_text_voice": "Vocal",
+  "one_time_device_otp_input_required_text_email": "Email",
+  "one_time_device_otp_input_required_enter_passcode_voice": "Entrer le code que vous avez entendu pour compléterl'authentification.",
+  "one_time_device_otp_input_required_enter_passcode": "Entrer le code que vous avez reçu pour compléterl'authentification.",
+  "one_time_device_otp_input_required_calling": "Appel en cours:",
+  "one_time_device_otp_input_required_sms_sent": "Message envoyé à:",
+  "one_time_device_otp_input_required_sent_to": "envoyé à:",
+  "one_time_device_otp_input_required_btn_call_again": "Rappeler",
+  "one_time_device_otp_input_required_btn_sign_on": "Se connecter",
+
+  "one_time_device_otp_method_type_input_required_title": "Sélectionner la méthode d'authentification",
+  "one_time_device_otp_method_type_input_required_subtitle": "Sélectionner la méthode d'authentification que vous voulez utiliser pour recevoir les codes OTP d'authentification.",
+
+  "otp_required_btn_sign_on": "Se connecter",
+
+  "password_requirements_title": "Exigences de sécurté pour le mot de passe :",
+
+  "password_reset_required_title": "Réinitialiser votre mot de passe",
+  "password_reset_required_label_new_password": "Entrer le nouveau mot de passe",
+  "password_reset_required_label_verify_password": "Confirmer le nouveau mot de passe",
+  "password_reset_required_btn_reset": "Réinitialiser",
+
+  "platform_activation_required_error_unsupported": "Facteur d'authentification non supporté",
+  "platform_activation_required_error_consent": "Facteur d'authentification non supporté ou l'utilisateur a refusé le consentement",
+  "platform_activation_required_biometrics": "Biométrie",
+  "platform_activation_required_follow": "Suivre les indications données par votre navigateur pour achever l'association des facteurs biométriques.",
+
+  "push_confirmation_timed_out_header": " Authentification",
+  "push_confirmation_timed_out_timeout": "Expiré",
+  "push_confirmation_timed_out_btn_sign_on": "Se connecter",
+
+  "push_confirmation_waiting_title": "Centre d'authentification PingOne",
+  "push_confirmation_waiting_small_title": "Authentification en cours",
+  "push_confirmation_waiting_btn_use_passcode": "Utiliser un code",
+
+  "recovery_code_required_title": "Code de récupération nécessaire",
+  "recovery_code_required_subtitle": "L'utilisateur a sélectionné pour réaliser une récupération de compteet un code de sécurité est nécessire.",
+  "recovery_code_required_placeholder_recovery": "Adresse Email",
+  "recovery_code_required_label_recovery": "Code de récupération",
+  "recovery_code_required_btn_check_recovery_code": "Vérifier le code de récupération",
+
+  "reference_id_required_title": "Connexion à l'application",
+  "reference_id_required_link_complete": "Intégration complète de Widget sans agent",
+  "reference_id_required_label_username": "Identifiant",
+  "reference_id_required_label_pwd": "Mot de passe",
+  "reference_id_required_btn_sign_on": "Se connecter",
+
+  "registration_required_title": "Créer votre profil",
+  "registration_required_subtitle": "Renseigner les informations ci-dessous.",
+  "registration_required_label_password": "Mot de passe",
+  "registration_required_label_verify_password": "Confirmer le nouveau mot de passe",
+  "registration_required_this_my_device": "Ceci est mon appareil",
+  "registration_required_btn_save": "Enregistrer",
+  "registration_required_label_already_account": "Compte déjà créé ?",
+  "registration_required_btn_sign_in": "Connexion",
+  "registration_required_register": "Enregistrement",
+
+  "securid_credential_required_error_1": "Echec de connexion.",
+  "securid_credential_required_error_2": "tentative(s) restante(s).",
+  "securid_credential_required_text_reset_failed": "Echec de l'opération de réinitialisation du code PIN à cause de la validation du règlement. Merci de réessayer.",
+  "securid_credential_required_label_username": "Identifiant",
+  "securid_credential_required_label_passcode": "Code",
+
+  "securid_next_tokencode_required_text": "Attendre jusqu'à ce que le code du jeton (le numéro sur votre jeton RSA SecurID) change, puis entrer le nouveau code du jeton.<br/><br/><strong>Note</strong>: Le changement de code du jeton peut prendre une minute ou plus.",
+  "securid_next_tokencode_required_label_next_token": "Nouveau code jeton",
+
+  "securid_reauthentication_required_text": "Merci de vous authentifier de nouveau pour terminer la réinitialisation de votre code PIN.<br/><br/>Attendre jusqu'à ce que le code du jeton (le numéro sur votre jeton RSA SecurID) change, puis entrer le nouveau code du jeton.<br/><br/><strong>Note:</strong> Le changement de code du jeton peut prendre une minute ou plus.",
+  "securid_reauthentication_required_label_passcode": "Code",
+
+  "securid_system_pin_reset_required_text_1": "Soit vous n'avez pas encore de code PIN, soit la politique de sécurité nécessite un changement de code PIN.<br/><br/>Votre nouveau code PIN RSA SecurID se trouve ci-dessous.",
+  "securid_system_pin_reset_required_text_2": "<strong>IMPORTANT: Notez votre nouveau code PIN. Il ne sera plus affiché dans le futur.</strong><br/><br/>Cliquez sur 'Valider' pour activer le nouveau code PIN et passez au formulaire de réauthentification.",
+  "securid_system_pin_reset_required_new_pin": "Nouveau code",
+
+  "securid_user_pin_reset_required_error_msg": "Code PIN invalide.",
+  "securid_user_pin_reset_required_text": "Soit vous n'avez pas encore de code PIN, soit la politique de sécurité nécessite un changement de code PIN.",
+  "securid_user_pin_reset_required_label_new_pin": "Nouveau code PIN",
+  "securid_user_pin_reset_required_label_confirm_pin": "Confirmer le code PIN",
+  "securid_user_pin_reset_required_error_pin_no_match": "Les deux codes ne sont pas similaires.",
+
+  "security_key_activation_required_error_unsupported_auth": "Authentificateur non pris en charge",
+  "security_key_activation_required_error_user_refused": "Authentificateur non pris en charge ou consentement refusé par l'utilisateur",
+  "security_key_activation_required_security_key": "Clé de sécurité",
+  "security_key_activation_required_follow": "Suivez les instructions délivrées par votre navigateur pour terminer l'appairage de la clef de sécurité.",
+
+  "sms_activation_required_title": "SMS",
+  "sms_activation_required_text": "Entrer le code que vous avez reçu pour terminer l'appairage par SMS.",
+  "sms_activation_required_sent_to": "Message envoyé à:",
+
+  "sms_pairing_target_required_title": "SMS",
+  "sms_pairing_target_required_text": "Entrer le numéro de mobile sur lequel vous souhaitez recevoir les codes d'authentification.",
+
+  "successful_account_unlock_title": "Déverrouillage du compte réussi",
+  "successful_account_unlock_successful": "Déverrouillage du compte réussi",
+  "successful_account_unlock_continue_auth": "Continuer l'authentification",
+  "successful_account_unlock_btn_continue_recovery": "Continuer la récupération de compte",
+
+  "successful_password_change_title": "Changer le mot de passe",
+  "successful_password_change_text": "Félicitations! Vous avez changé votre mot de passe avec succès. Merci d'utiliser ce nouveau mot de passe pour vos prochaines connexions.",
+
+  "successful_password_reset_title": "Récupération du compte",
+  "successful_password_reset_text": "Votre mot de passe a été réinitialisé. Merci d'utiliser le nouveau mot de passe pour vos prochaines connexions.",
+
+  "totp_activation_required_title": "Application d’authentification",
+  "totp_activation_required_subtitle": "Scanner le QR Code en utilisant l'application d’authentification, puis entrer the code affiché pour terminer.",
+  "totp_activation_required_text_pairing": "Clef d'appairage:",
+
+  "user_id_required_label_username": "Identifiant",
+
+  "username_password_required_label_username": "Identifiant",
+  "username_password_required_label_password": "Mot de passe",
+  "username_password_required_label_remember": "Se souvenir de moi",
+  "username_password_required_label_my_device": "C'est mon appareil",
+  "username_password_required_link_trouble_sign_on": "Problème de connexion ?",
+  "username_password_required_link_change_password": "Changement de mot de passe ?",
+  "username_password_required_link_register": "S'enregistrer maintenant.",
+  "username_password_required_text_no_account": "Pas de compte ?",
+  "username_password_required_btn_sign": "Se connecter",
+
+  "username_recovery_email_required_title": "Récupération d'identifiant",
+  "username_recovery_email_required_subtitle": "Entrer votre adresse email pour recevoir un email contenant l'identifiant.",
+  "username_recovery_email_required_label_email": "Adresse email",
+  "username_recovery_email_required_btn_send": "Recevoir mon identifiant",
+
+  "username_recovery_email_sent_title": "Récupération d'identifiant",
+  "username_recovery_email_sent_subtitle": "Merci pour votre demande. Si votre adresse email est reconnue, vous recevrez votre identifiant par email.",
+
+  "vip_authentication_required_subtitle": "Entrer un code de sécurité issu de vos identifiants VIP ou utilisez un des autres facteurs : SMS, Vocal et notification (si disponible) pour vous authentifier.",
+  "vip_authentication_required_label_push": "Notification",
+  "vip_authentication_required_label_code": "Code de sécurité",
+  "vip_authentication_required_label_sms": "SMS",
+  "vip_authentication_required_label_voice": "Vocal",
+
+  "vip_credential_required_text_add": "Ajouter des identifiants.",
+  "vip_credential_required_label_credential": "Code de l'identifiant",
+  "vip_credential_required_label_code": "Code de sécurité",
+
+  "vip_credential_reset_required_text_reset": "Réinitialiser vos identifiants VIP.",
+  "vip_credential_reset_required_label_registered": "Identifiants enregistrés",
+  "vip_credential_reset_required_label_first_code": "Premier code de sécurité",
+  "vip_credential_reset_required_label_second_code": "Second code de sécurité",
+
+  "vip_enrollment_subtitle": "Identifiants enregistrés",
+  "vip_enrollment_btn_add": "Ajouter des identifiants",
+
+  "voice_activation_required_title": "Vocal",
+  "voice_activation_required_subtitle": "Entrer le code que vous avez entendu pour compléter l'appairage vocal.",
+  "voice_activation_required_calling": "Appel en cours:",
+  "voice_activation_required_call_again": "Rappeler",
+
+  "voice_pairing_target_required_title": "Vocal",
+  "voice_pairing_target_required_subtitle": "Entrer le numéro de téléphone sur lequel vous souhaitez recevoir les codes d'authentification.",
+
+  "index_pairing_msg_part_1": "Entrer la clef d'appairage en utilisant",
+  "index_pairing_msg_part_2": "pour conclure l'appairage.",
+  "index_pairing_msg": "Entrer la clef d'appairage en utilisant votre application d'authentification, puis entrer le code affiché pour terminer.",
+  "index_scan_msg": "Scanner le code affiché pour terminer l'authentification.",
+  "index_select_method_for_weblink": "Choisir une méthode pour recevoirun lien sur votre appareil mobile, pour commencer le processus de vérification.",
+
+  "btn_continue": "Continuer",
+  "btn_retry": "Réessayer",
+  "btn_cancel": "Annuler",
+  "btn_next": "Suivant",
+  "btn_resend": "Renvoyer",
+  "btn_finish": "Terminer",
+  "btn_submit": "Valider",
+
+  "error_pwd_change_title": "Changer le mot de passe",
+  "error_pwd_change_msg": "Vous avez interrompu le processus de changement de mot de passe. Vous pouvez fermer cette fenêtre.",
+  "error_account_recovery_title": "Récupération de compte",
+  "error_account_recovery_msg": "Vous avez interrompu le processus de réinitialisation de mot de passe. Vous pouvez fermer cette fenêtre.",
+  "error_username_recovery_title": "Récupération de compte",
+  "error_username_recovery_msg": "Vous avez interrompu le processus de récupération de votre identifiant. Vous pouvez fermer cette fenêtre.",
+  "error_server_return_part_1": "Le serveur a retourné le code",
+  "error_server_return_part_2": ". Prenez contact avec votre administrateur système.",
+  "error_code_part_1": "Code d'erreur",
+  "error_code_part_2": "renvoyé par le serveur d'autorisation.",
+  "error_api_challenge_required": "Réponse de PingFederate Authentication API Challenge attendue.",
+  "error_auth_url_required": "Attribut authorizationUrl attendu",
+  "error_auth_url_must_be_string": "l'attribut authorizationUrl doit être une chaîne de caratères.",
+  "error_oidc_auth_endpoint_required": "Attribut oidcAuthnResponseEndpoint attendu.",
+  "error_oidc_auth_endpoint_must_be_string": "l'attribut oidcAuthnResponseEndpoint doit être une chaîne de caratères.",
+  "error_methode_attribute_required": "Attribut de la méthode nécessaire",
+  "error_methode_attribute_must_be_string": "L'attribut de la méthode doit être une chaîne de caratères."
+}

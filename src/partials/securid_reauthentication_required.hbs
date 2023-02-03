@@ -7,20 +7,20 @@
   <form class="form" id="AuthnWidgetForm">
     <div class="text-block" data-id="textblock">
       <div class="text-block--overflow-wrap">
-        Please re-authenticate to complete your PIN reset.<br/><br/>Wait until the tokencode (the number on your RSA SecurID token) changes, then enter the new tokencode.<br/><strong>Note:</strong> It might take a minute or more for the tokencode to change.
+        {{> i18n 'securid_reauthentication_required_text'}}
       </div>
     </div>
     <div class="float-label">
       <input type="password" class="text-input float-label__input required" id="passcode" name="passcode"
-        placeholder="Passcode" />
-      <label class="float-label__label" for="passcode">Passcode</label>
+        placeholder="{{i18n 'securid_reauthentication_required_label_passcode'}}" />
+      <label class="float-label__label" for="passcode">{{i18n 'securid_reauthentication_required_label_passcode'}}</label>
     </div>
     <button id="submit" data-actionid="checkPasscode" type="submit" class="button button--primary brand-primary-bg">
-      Submit
+      {{i18n 'btn_submit'}}
     </button>
     <div class="text-block">
       <div class="text-block--overflow-wrap">
-        <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">Cancel</a>
+        <a tabindex="0" data-actionId="cancel" target="_self" class="anchor">{{i18n 'btn_cancel'}}</a>
       </div>
     </div>
   </form>

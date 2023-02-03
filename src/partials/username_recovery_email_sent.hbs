@@ -2,15 +2,14 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Username Recovery</h1>
+  <h1 class="heading">{{i18n 'username_recovery_email_sent_title'}}</h1>
   <div class="text-block">
-    <div class="text-block__text">Thanks for your request. If your email address is verified, you'll receive an email
-      with your username.</div>
+    <div class="text-block__text">{{i18n 'username_recovery_email_sent_subtitle'}}</div>
   </div>
   {{#with _links as |actions|}}
   {{#if continueAuthentication}}
   <form class="form form--margin-small" id="AuthnWidgetForm">
-    <button data-actionId="continueAuthentication" class="button">Continue</button>
+    <button data-actionId="continueAuthentication" class="button">{{i18n 'btn_continue'}}</button>
   </form>
   {{/if}}
   {{/with}}

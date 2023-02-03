@@ -2,11 +2,11 @@
   <div class="org-logo">
     <img class="org-logo__image" src="{{logo}}" alt="Company Logo" />
   </div>
-  <h1 class="heading">Sign On</h1>
+  <h1 class="heading">{{i18n 'identifier_required_title'}}</h1>
   <div class="text-block">
     <div class="text-block__text">
       {{#if previouslySubmittedIdentifiers.length}}
-      Choose an Account
+      {{i18n 'identifier_required_text_choose'}}
       {{/if}}
     </div>
   </div>
@@ -24,10 +24,10 @@
     </div>
     {{/each}}
     <div class="identifier-first__account-item__another_acount">
-      <a data-idFirstAction="selectidentifier" href="#">Use Another Account</a>
+      <a data-idFirstAction="selectidentifier" href="#">{{i18n 'identifier_required_btn_another'}}</a>
     </div>
     <div class="identifier-first__cancel">
-      <button data-actionId="cancelIdentifierSubmission" class="button">Cancel</button>
+      <button data-actionId="cancelIdentifierSubmission" class="button">{{i18n 'btn_cancel'}}</button>
     </div>
   </div>
   <div id="signonidentifier" style="display: none">

@@ -7,11 +7,11 @@
             <div class="text-block" data-id="textblock">
               <div class="text-block--overflow-wrap">
                 {{#ifEq device.type "Voice" }}
-                  Calling:
+                  {{i18n 'device_selection_information_text_voice'}}
                 {{else ifEq device.type "SMS" }}
-                  Message sent to:
+                  {{i18n 'device_selection_information_text_sms'}}
                 {{else}}
-                  {{device.type}} sent to:
+                  {{device.type}} {{i18n 'device_selection_information_text_sent'}}
                 {{/ifEq}}
               </div>
             </div>
@@ -26,9 +26,9 @@
               <button class="button file-input--button button--tertiary" data-id="button"
                       type="button" data-mfa-selection="{{device.id}}">
                 {{#ifEq device.type "Voice" }}
-                  Call again
+                  {{i18n 'device_selection_information_btn_call'}}
                 {{else}}
-                  Resend
+                  {{i18n 'btn_resend'}}
                 {{/ifEq}}
               </button>
             </div>
