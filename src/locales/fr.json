@@ -428,6 +428,7 @@
   "btn_resend": "Renvoyer",
   "btn_finish": "Terminer",
   "btn_submit": "Valider",
+  "btn_sign_on": "Se connecter",
 
   "error_pwd_change_title": "Changer le mot de passe",
   "error_pwd_change_msg": "Vous avez interrompu le processus de changement de mot de passe. Vous pouvez fermer cette fenêtre.",
